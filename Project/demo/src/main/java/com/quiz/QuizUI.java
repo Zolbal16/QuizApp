@@ -47,7 +47,7 @@ public class QuizUI extends JFrame {
         setIconImage(icon.getImage());
 
         setTitle("Quiz");
-        setSize(900, 300);
+        setSize(1000, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel centerPanel = new JPanel(new FlowLayout());
@@ -68,6 +68,7 @@ public class QuizUI extends JFrame {
         centerPanel.add(submitButton);
 
         scoreLabel = new JLabel("");
+        scoreLabel.setForeground(Color.WHITE);
         centerPanel.add(scoreLabel);
 
         basePanel.add(centerPanel, BorderLayout.NORTH);
